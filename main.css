@@ -1,0 +1,425 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    height: 12px;
+    transform: translate(-50vh,-50vh);
+    position: absolute;
+    background-color: white;
+    width: 12px;
+    z-index: 99;
+    border-radius: 50%;
+
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#hero{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+  
+}
+
+#nav a{  
+    text-decoration: none;
+   
+
+    font-size: 18px;
+    color: #fff;
+}
+
+#nav {
+   
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+ }
+
+#heading{
+    margin-top: 90px ;
+}
+
+#heading h1{
+    margin-left: 30px;
+    opacity: .6;
+    line-height: 1;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#heading #second1{
+ margin-left: 230px;
+}
+
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+
+}
+
+.blocktext h5{
+    font-size: 15px;
+    text-align: right 
+}
+
+#chotiheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+
+#chotiheading h5{
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size: 1vw;
+    text-align: right;
+
+}
+
+#herofotter{
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+}
+
+#herofotter a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+#herofotter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#herofotter #iconset{
+    display: flex;
+    gap: 4px;
+}
+
+#second{
+    color: white;
+   position: relative;
+   height: 100vh;
+   padding-right: 10vw;
+   padding-top: 200px; 
+  width: 100%;
+}
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+
+}
+
+.elamlast{
+ border-bottom: 1px solid #888;
+}
+.elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.about{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ 
+ gap: 20px;
+ padding: 4vw 5vw;
+ padding-left: 35vw;
+ margin-top: 30vw;
+ color: white;
+ 
+ background-color: black;
+}
+
+.about img{
+
+    width: 200px;
+   
+}
+
+#textabout{
+  width: 25rem;
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+#textabout p{
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+#textabout a{
+    padding: 7px 22px;
+    border: 1px solid white;
+    border-radius:100px ;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#subscribe{
+ color: white;
+ padding-bottom: 2vw;
+ margin-bottom: 10vw;
+ margin-top: 6vw;   
+ padding: 20px 30px;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+#fotter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    color: white;
+}
+
+#fotterleft{
+  display: flex;
+  gap: 30px;
+}
+
+#fotterright{
+ display: flex;
+ gap: 30px;
+}
+#fotter a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+#subscribe h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.borderani {
+    position: relative; 
+    display: inline-block; 
+    text-decoration: none;
+    
+    color: #fff;
+    z-index: 1; /* important for me */
+}
+
+.borderani:after {
+    content: " ";
+    background-color: white;
+    height: 1px;
+    
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.borderani:hover:after {
+    width: 100%;
+}
+.point{
+    cursor: pointer;
+}
+
+.talk:hover {
+    background-color: white;
+    color: black !important;
+    transition: 0.7s;
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+   
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+      overflow-x:hidden ;
+    }
+   
+    #nav {
+      padding: 10px 20px;
+    }
+    
+    .med{
+      margin: 0 auto;
+    }
+    .siz{
+        margin-left: 0 !important;
+        font-size: 18vw !important;
+        
+    }
+    #nav{
+        margin-top: 12px;
+    }
+    .based{
+    margin-top: 7px;
+    }  
+    #hero{
+        height: 100vh !important;
+    }
+    #iconset{
+        display: none !important;
+    }
+    #herofotter{
+       position: absolute;
+       bottom: 2vh;
+       font-size: 3.8vw;
+    }
+    #chotiheading .bounding .boundingelem{
+        font-size: 3vw;
+    }
+    #second{
+        height: 46vh;
+        display: flex;
+        padding-top: 9vw;
+        flex-direction: column;
+    }
+    #subs{
+        width:36%;
+    }
+    .based h5{
+        font-size: 3vw;
+        margin-right: 3vh;
+        margin-top: 7vh;
+        
+        
+    } 
+    #botd{
+        margin-bottom: 2vh;
+        font-size: 4.4vw;
+    }
+    
+   #heading{
+   margin-top: 21vh;
+   }
+    #second1{
+        
+        margin-left: 0 !important;
+    }
+    .bounding{
+        overflow: visible;
+    }
+    .boundingelem{
+        margin: 0 auto;
+    }
+    .blocktext{
+       width: auto;
+    }
+    #hero {
+      height: auto;
+    }
+    
+  
+    .elem {
+      padding: 15px;
+    }
+    
+  
+    .about {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    
+    
+    #textabout {
+      width: 100%;
+      text-align: center;
+    }
+
+    #minicircle{
+        display: none;
+    }
+    
+    
+    #fotter {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+  
+    #fotter a {
+      margin: 5px 0;
+    }
+  
+    #subscribe {
+      padding: 10px 20px;
+      margin: 10px 0;
+    }
+    
+  }
+  
