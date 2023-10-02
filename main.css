@@ -423,7 +423,7 @@ html,body{
       margin: 5px 0;
     }
     #fotterleft{
-        align-self: self-start;
+        align-self: center;
     }
     #fotterright{
         margin-top: 5px;
