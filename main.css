@@ -298,6 +298,12 @@ html,body{
     color: black !important;
     transition: 0.7s;
 }
+.boundingelem::selection {
+    color: black;
+    background-color: white;
+    
+
+}
 
 /* Mobile Devices */
 @media (max-width: 767px) {
@@ -347,7 +353,7 @@ html,body{
         flex-direction: column;
     }
     #subs{
-        width:36%;
+        width:50%;
     }
     .based h5{
         font-size: 3vw;
@@ -409,11 +415,18 @@ html,body{
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      margin-top: 67px;
     }
     
   
     #fotter a {
       margin: 5px 0;
+    }
+    #fotterleft{
+        align-self: self-start;
+    }
+    #fotterright{
+        margin-top: 5px;
     }
   
     #subscribe {
@@ -422,4 +435,6 @@ html,body{
     }
     
   }
+  
+
   
