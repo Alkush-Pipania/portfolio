@@ -1,3 +1,4 @@
+
 var timeout;
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
@@ -97,5 +98,29 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
   });
 
+
+  function updateTime() {
+    const now = new Date();
+    const timeElement = document.getElementById("time");
+
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const timezone = now.toLocaleTimeString('en-US', { timeZoneName: 'short' }).split(' ')[2];
+
+    timeElement.textContent = `${hours}:${minutes} ${timezone}`;
+}
+
+updateTime(); 
+
+
+setInterval(updateTime, 60000);
+
+function updateYear() {
+  const yearElement = document.getElementById("currentYear");
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+}
+
+updateYear(); 
 
 
