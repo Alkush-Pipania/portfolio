@@ -435,6 +435,27 @@ html,body{
     }
     
   }
-  
+
+.info{
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    border-radius: 4%;
+    padding-left: 2px;
+    color: black;
+   align-items: center;
+   
+    background-color: white;
+}
+.icons{
+    background-color: white;
+    margin: auto;
+    
+}
 
   
