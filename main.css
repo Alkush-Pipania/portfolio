@@ -327,6 +327,10 @@ html,body{
 
 /* Mobile Devices */
 @media (max-width: 767px) {
+     #nav{
+        top: -1.8vh;
+        padding-top: 16px !important;
+    }
    
     body {
       font-size: 14px;
