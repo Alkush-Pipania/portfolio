@@ -292,11 +292,25 @@ html,body{
     transition: 0.3s;
 }
 
+
 .borderani:hover:after {
     width: 100%;
 }
 .point{
     cursor: pointer;
+}
+
+.talk{
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius:100px ;
+    color: #fff;
+    
+    font-size: 1.2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.7s; 
+    
 }
 
 .talk:hover {
@@ -479,6 +493,11 @@ html,body{
     background-image: linear-gradient(90deg, red, blue);
     animation: scroll-reveal linear forwards;
 }
+
+
+
+
+
 
 
 
