@@ -1,5 +1,4 @@
 
-
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +12,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
+
 
 .bounding{
     width: fit-content;
@@ -59,8 +59,11 @@ html,body{
     color: #fff;
 }
 
+
+
 #nav {
    
+    
     background-color: black;
     display: flex;
     align-items: center;
@@ -327,7 +330,15 @@ html,body{
 
 /* Mobile Devices */
 @media (max-width: 767px) {
-     #nav{
+
+    .talk{
+        
+        font-size: 3.8vw;
+       position: relative;
+        left: 15vh;
+    }
+
+    #nav{
         top: -1.8vh;
         padding-top: 16px !important;
     }
@@ -387,7 +398,7 @@ html,body{
         
     } 
     #botd{
-        margin-bottom: 2vh;
+        margin-bottom: 6vh;
         font-size: 4vw;
         transform: translate(6px, 19px);
     }
@@ -441,7 +452,7 @@ html,body{
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      margin-top: 67px;
+      margin-top: 82px;
     }
     
   
@@ -449,7 +460,7 @@ html,body{
       margin: 5px 0;
     }
     #fotterleft{
-        align-self: self-start;
+        align-self: center;
     }
     #fotterright{
         margin-top: 5px;
@@ -497,6 +508,7 @@ html,body{
     background-image: linear-gradient(90deg, red, blue);
     animation: scroll-reveal linear forwards;
 }
+
 
 
 
